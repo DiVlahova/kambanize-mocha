@@ -35,7 +35,7 @@ describe('Test_CreateNewCard...', () => {
     let insert_data = {
       column_id: 1,
       lane_id: 1,
-      title: "Test create new card123",
+      title: "Test create new card",
       position: 5
     };
     chai.request(server)
@@ -267,7 +267,7 @@ describe('Change the card position_emphty symbols...', () => {
 describe('Delete card...', () => {
   it('Delete card ...', (done) => {
     chai.request(server)
-      .delete("/cards/81")
+      .delete("/cards/111")
       .set("ApiKey", apiKey)
       .end((err, res) => {
         res.should.have.status(204);
@@ -279,7 +279,7 @@ describe('Delete card...', () => {
 describe('Check deleted card...', () => {
   it('Check deleted card...', (done) => {
     chai.request(server)
-      .get("/cards/81")
+      .get("/cards/111")
       .set("ApiKey", apiKey)
       .end((err, res) => {
         res.should.have.status(404);
