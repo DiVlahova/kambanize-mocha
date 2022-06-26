@@ -1,0 +1,19 @@
+{
+  "name": "kambanize",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --timeout 20000"
+  },
+  "author": "Dimitrina Vlahova",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0"
+  }
+}
